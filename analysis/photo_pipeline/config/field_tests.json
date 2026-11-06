@@ -1,0 +1,17 @@
+{
+ "_doc": "Follow-up checks, each observing one library item. access: desk = records, drawings, interviews, archive imagery (no site visit); field = needs site access or samples. The fieldplan stage ranks them by expected information gain against the current evidence.",
+ "tests": {
+  "drawings_vs_built": {"name": "Approved drawings and permit vs storeys built", "access": "desk", "cost": "low", "item": "RECORD_FLOORS_EXCEED_PERMIT", "how": "Planning approvals (county or city authority), building regulator registration (NCA Kenya, NBRB Uganda), developer adverts, satellite storey count (earthengine stage)"},
+  "use_and_plant": {"name": "Use, occupancy and heavy plant at the time", "access": "desk", "cost": "low", "item": "RECORD_USE_CHANGE_OVERLOAD", "how": "Business permits, tenant interviews, social-media posts"},
+  "prior_distress": {"name": "Distress reported before the collapse", "access": "desk", "cost": "low", "item": "RECORD_CRACKS_REPORTED", "how": "Building regulator or council notices (NCA, NBRB, KCCA), tenant complaints, news archive"},
+  "l0_alterations": {"name": "Ground-storey alterations before the collapse", "access": "desk", "cost": "low", "item": "CUT_OR_REMOVED_GROUND_ELEMENTS", "how": "Pre-collapse photos and videos (social media, Street View), tenant and worker interviews"},
+  "pour_log": {"name": "Concreting under way on an upper floor at the time", "access": "desk", "cost": "low", "item": "RECORD_POUR_IN_PROGRESS", "how": "Contractor records, worker interviews, ready-mix delivery notes"},
+  "adjacent_works": {"name": "Excavation or works next to the footprint", "access": "desk", "cost": "low", "item": "ADJACENT_EXCAVATION", "how": "Satellite chips from the context stage, neighbour permits, photos"},
+  "column_sizes": {"name": "Ground-storey column sizes vs storeys", "access": "desk", "cost": "medium", "item": "SMALL_COLUMNS_FOR_HEIGHT", "how": "Structural drawings if obtainable; otherwise tape survey of stubs on site"},
+  "concrete_strength": {"name": "Concrete strength of ground-storey members", "access": "field", "cost": "medium", "item": "POOR_CONCRETE_CONFIRMED", "how": "Cores (BS EN 12504-1) or rebound hammer on surviving members and large debris"},
+  "rebar_check": {"name": "Bar diameter, mass and tensile properties", "access": "field", "cost": "medium", "item": "REBAR_UNDERSIZED_OR_SMOOTH", "how": "Caliper and mass per metre on debris bars; tensile tests (EAS 412 as KS/US EAS 412, or BS 4449)"},
+  "tie_survey": {"name": "Column ties: spacing and hooks", "access": "field", "cost": "low", "item": "SPARSE_TIES_90_HOOKS", "how": "Tape survey of exposed column stubs and debris columns"},
+  "lap_survey": {"name": "Column lap positions and lengths", "access": "field", "cost": "low", "item": "LAPS_AT_ONE_LEVEL", "how": "Exposed column stubs and debris columns"},
+  "ground_check": {"name": "Ground and footing condition", "access": "field", "cost": "high", "item": "SETTLEMENT_OR_HEAVE", "how": "Trial pits at footings, boreholes, settlement survey of neighbours"}
+ }
+}

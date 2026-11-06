@@ -1,0 +1,449 @@
+{
+ "S0 design fc=30, intact": {
+  "ground_dcr_intact": {
+   "0": 0.25,
+   "1": 0.4,
+   "2": 0.42,
+   "3": 0.42,
+   "4": 0.4,
+   "5": 0.25
+  },
+  "capacity_over_weight": 2.81,
+  "global_collapse": false,
+  "log": [
+   {
+    "step": 0,
+    "removed": [],
+    "max_dcr_ground": 0.4208887187919248
+   },
+   {
+    "step": 1,
+    "removed": [],
+    "dyn_dcr_ground": {
+     "0": 0.25,
+     "1": 0.4,
+     "2": 0.42,
+     "3": 0.42,
+     "4": 0.4,
+     "5": 0.25
+    },
+    "max_dyn_dcr_storey2": 0.4,
+    "new_failures": []
+   }
+  ]
+ },
+ "S1 fc=30, corner col removed (alteration)": {
+  "ground_dcr_intact": {
+   "0": 0.25,
+   "1": 0.4,
+   "2": 0.42,
+   "3": 0.42,
+   "4": 0.4,
+   "5": 0.25
+  },
+  "capacity_over_weight": 2.81,
+  "global_collapse": false,
+  "log": [
+   {
+    "step": 0,
+    "removed": [
+     [
+      1,
+      0
+     ]
+    ],
+    "max_dcr_ground": 0.4208887187919248
+   },
+   {
+    "step": 1,
+    "removed": [
+     [
+      1,
+      0
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "1": 1.0,
+     "2": 0.45,
+     "3": 0.42,
+     "4": 0.39,
+     "5": 0.13
+    },
+    "max_dyn_dcr_storey2": 1.41,
+    "new_failures": []
+   }
+  ]
+ },
+ "S2 fc=30, corner + 2nd col removed": {
+  "ground_dcr_intact": {
+   "0": 0.25,
+   "1": 0.4,
+   "2": 0.42,
+   "3": 0.42,
+   "4": 0.4,
+   "5": 0.25
+  },
+  "capacity_over_weight": 2.81,
+  "global_collapse": true,
+  "log": [
+   {
+    "step": 0,
+    "removed": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "max_dcr_ground": 0.4208887187919248
+   },
+   {
+    "step": 1,
+    "removed": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "2": 2.25,
+     "3": 0.5,
+     "4": 0.38,
+     "5": 0.74
+    },
+    "max_dyn_dcr_storey2": 5.45,
+    "new_failures": [
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   {
+    "step": 2,
+    "removed": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "3": 4.39,
+     "4": 2.1,
+     "5": 2.57
+    },
+    "max_dyn_dcr_storey2": 9.99,
+    "new_failures": [
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "S3 fc=15 (poor concrete), intact": {
+  "ground_dcr_intact": {
+   "0": 0.41,
+   "1": 0.65,
+   "2": 0.69,
+   "3": 0.69,
+   "4": 0.65,
+   "5": 0.41
+  },
+  "capacity_over_weight": 1.71,
+  "global_collapse": false,
+  "log": [
+   {
+    "step": 0,
+    "removed": [],
+    "max_dcr_ground": 0.6925318714676135
+   },
+   {
+    "step": 1,
+    "removed": [],
+    "dyn_dcr_ground": {
+     "0": 0.41,
+     "1": 0.65,
+     "2": 0.69,
+     "3": 0.69,
+     "4": 0.65,
+     "5": 0.41
+    },
+    "max_dyn_dcr_storey2": 0.65,
+    "new_failures": []
+   }
+  ]
+ },
+ "S4 fc=15, corner col removed": {
+  "ground_dcr_intact": {
+   "0": 0.41,
+   "1": 0.65,
+   "2": 0.69,
+   "3": 0.69,
+   "4": 0.65,
+   "5": 0.41
+  },
+  "capacity_over_weight": 1.71,
+  "global_collapse": true,
+  "log": [
+   {
+    "step": 0,
+    "removed": [
+     [
+      1,
+      0
+     ]
+    ],
+    "max_dcr_ground": 0.6925318714676135
+   },
+   {
+    "step": 1,
+    "removed": [
+     [
+      1,
+      0
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "1": 1.64,
+     "2": 0.74,
+     "3": 0.69,
+     "4": 0.64,
+     "5": 0.21
+    },
+    "max_dyn_dcr_storey2": 1.5,
+    "new_failures": [
+     [
+      1,
+      1
+     ]
+    ]
+   },
+   {
+    "step": 2,
+    "removed": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "2": 3.68,
+     "3": 1.5,
+     "4": 0.81,
+     "5": 0.67
+    },
+    "max_dyn_dcr_storey2": 4.98,
+    "new_failures": [
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   {
+    "step": 3,
+    "removed": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "4": 16.44,
+     "5": 11.45
+    },
+    "max_dyn_dcr_storey2": 27.43,
+    "new_failures": [
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "S5 fc=15, corner+2nd cols lose 50% section": {
+  "ground_dcr_intact": {
+   "0": 0.83,
+   "1": 1.25,
+   "2": 0.71,
+   "3": 0.69,
+   "4": 0.65,
+   "5": 0.41
+  },
+  "capacity_over_weight": 1.42,
+  "global_collapse": true,
+  "log": [
+   {
+    "step": 0,
+    "removed": [],
+    "max_dcr_ground": 1.253509165371006
+   },
+   {
+    "step": 1,
+    "removed": [],
+    "dyn_dcr_ground": {
+     "0": 0.83,
+     "1": 1.25,
+     "2": 0.71,
+     "3": 0.69,
+     "4": 0.65,
+     "5": 0.41
+    },
+    "max_dyn_dcr_storey2": 0.67,
+    "new_failures": [
+     [
+      1,
+      1
+     ]
+    ]
+   },
+   {
+    "step": 2,
+    "removed": [
+     [
+      1,
+      1
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "0": 2.07,
+     "2": 1.32,
+     "3": 0.73,
+     "4": 0.65,
+     "5": 0.39
+    },
+    "max_dyn_dcr_storey2": 7.74,
+    "new_failures": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   {
+    "step": 3,
+    "removed": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "dyn_dcr_ground": {
+     "3": 7.27,
+     "4": 5.18,
+     "5": 2.67
+    },
+    "max_dyn_dcr_storey2": 15.06,
+    "new_failures": [
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "S6 fc=30, corner footing settles 50 mm": {
+  "ground_dcr_intact": {
+   "0": 0.5,
+   "1": 0.72,
+   "2": 0.44,
+   "3": 0.42,
+   "4": 0.39,
+   "5": 0.18
+  },
+  "capacity_over_weight": 2.79,
+  "global_collapse": false,
+  "log": [
+   {
+    "step": 0,
+    "removed": [],
+    "max_dcr_ground": 0.7201662611663835
+   },
+   {
+    "step": 1,
+    "removed": [],
+    "dyn_dcr_ground": {
+     "0": 0.5,
+     "1": 0.72,
+     "2": 0.44,
+     "3": 0.42,
+     "4": 0.39,
+     "5": 0.18
+    },
+    "max_dyn_dcr_storey2": 0.66,
+    "new_failures": []
+   }
+  ]
+ }
+}

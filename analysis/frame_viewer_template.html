@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frame-by-frame viewer</title>
+<style>
+  :root { --bg: #111518; --panel: #1a2026; --ink: #e4eaee; --soft: #94a3ad; --accent: #ffb000; --fail: #ff5d52; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.5 -apple-system, "Segoe UI", sans-serif; }
+  .wrap { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+  @media (max-width: 860px) { .wrap { grid-template-columns: 1fr; } }
+  img { width: 100%; display: block; border: 1px solid #2c363e; }
+  .panel { background: var(--panel); padding: 16px; border: 1px solid #2c363e; display: grid; gap: 12px; align-content: start; }
+  h1 { font-size: 18px; margin: 0; }
+  .phase { color: var(--fail); font-family: ui-monospace, Menlo, monospace; }
+  table { width: 100%; border-collapse: collapse; font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+  td { padding: 4px 6px; border-bottom: 1px solid #2c363e; }
+  td:first-child { color: var(--soft); }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  button { background: var(--ink); color: var(--bg); border: 0; padding: 6px 12px; cursor: pointer; font-family: ui-monospace, Menlo, monospace; }
+  input[type=range] { width: 100%; accent-color: var(--accent); }
+  .hint { color: var(--soft); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div><img id="img" alt="annotated frame"></div>
+  <div class="panel">
+    <h1>Eastleigh collapse - frame-by-frame record</h1>
+    <div class="phase" id="phase"></div>
+    <input type="range" id="s" min="0" value="0" aria-label="frame">
+    <div class="row">
+      <button id="prev">&larr; frame</button><button id="play">Play</button><button id="next">frame &rarr;</button>
+      <label class="hint"><input type="checkbox" id="slow" checked> play at 1/4 speed</label>
+    </div>
+    <table id="tbl"></table>
+    <p class="hint">Arrow keys step one frame (Shift = 10). Boxes: U/L/LL facade patches, G static ground wall.
+      Model values come from the crush-up fit; "measured" values come from optical-flow tracking.
+      Local file: contains identifiable people, do not publish.</p>
+    <p class="hint">Data: eyewitness video VID-20261023-WA0009 (23 Oct 2026); optical-flow tracking and crush-up model (this analysis).<br><strong>Credit: Gava Charles</strong></p>
+  </div>
+</div>
+<script>
+const M = /*METRICS*/[];
+const s = document.getElementById("s"), img = document.getElementById("img");
+s.max = M.length - 1;
+let i = 0, timer = null;
+const labels = { frame: "frame", t: "time [s]", z_model: "model descent [m]", v_model: "model velocity [m/s]",
+  rho_model: "model resistance / weight", left_drop_meas: "measured left-end drop [m]",
+  audio_db: "audio level [dBFS]", audio_centroid_hz: "audio centroid [Hz]" };
+function show(k) {
+  i = Math.max(0, Math.min(M.length - 1, k)); s.value = i;
+  const m = M[i];
+  img.src = "frames/f" + String(i).padStart(3, "0") + ".jpg";
+  document.getElementById("phase").textContent = m.phase;
+  document.getElementById("tbl").innerHTML = Object.entries(labels)
+    .map(([key, lab]) => `<tr><td>${lab}</td><td>${m[key] === null ? "-" : m[key]}</td></tr>`).join("");
+}
+s.oninput = () => show(+s.value);
+document.getElementById("prev").onclick = () => show(i - 1);
+document.getElementById("next").onclick = () => show(i + 1);
+document.getElementById("play").onclick = e => {
+  if (timer) { clearInterval(timer); timer = null; e.target.textContent = "Play"; return; }
+  e.target.textContent = "Pause";
+  timer = setInterval(() => { if (i >= M.length - 1) { clearInterval(timer); timer = null; e.target.textContent = "Play"; } else show(i + 1); },
+    1000 / 29.97 * (document.getElementById("slow").checked ? 4 : 1));
+};
+addEventListener("keydown", e => { if (e.key === "ArrowRight") show(i + (e.shiftKey ? 10 : 1)); if (e.key === "ArrowLeft") show(i - (e.shiftKey ? 10 : 1)); });
+show(0);
+</script>
+</body>
+</html>

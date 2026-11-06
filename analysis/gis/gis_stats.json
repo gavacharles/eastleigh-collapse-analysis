@@ -1,0 +1,59 @@
+{
+ "site_elev_m": 1647.05859375,
+ "nearest_river_m": 1286.5254142698013,
+ "nearest_river_elev_m": 1620.15625,
+ "nearest_drain_m": 1566.0632695278337,
+ "site_slope_deg": 3.154111409784487,
+ "nearest_river_name": "Mathare River",
+ "exposed_1H": 34,
+ "exposed_2H": 56,
+ "exposed_1H_tagged": 5,
+ "exposed_1H_max_levels": 13.0,
+ "access": [
+  {
+   "name": "Nairobi Fire Station",
+   "type": "fire_station",
+   "km": 4.29,
+   "minutes": 7.7
+  },
+  {
+   "name": "Kangundo Road Fire Station",
+   "type": "fire_station",
+   "km": 7.05,
+   "minutes": 12.7
+  },
+  {
+   "name": "Health Gate Hospital",
+   "type": "hospital",
+   "km": 0.97,
+   "minutes": 1.7
+  },
+  {
+   "name": "Care Hospital",
+   "type": "hospital",
+   "km": 0.99,
+   "minutes": 1.8
+  },
+  {
+   "name": "Anka Hospital",
+   "type": "hospital",
+   "km": 0.91,
+   "minutes": 2.5
+  },
+  {
+   "name": "Care Hospital",
+   "type": "hospital",
+   "km": 1.29,
+   "minutes": 2.5
+  }
+ ],
+ "last_mile_classes": {
+  "residential": 9,
+  "service": 6,
+  "tertiary": 5,
+  "secondary": 2
+ },
+ "screen_tall_ge8": 314,
+ "screen_total": 17596,
+ "screen_tagged": 318
+}

@@ -1,0 +1,110 @@
+[
+ {
+  "release_id": "10",
+  "acquired": "20110630",
+  "sensor": "WV02",
+  "res_m": "0.5",
+  "vendor": "DigitalGlobe",
+  "product": "VPP_Nairobi_KE_V2",
+  "first_release": "2014-02-20"
+ },
+ {
+  "release_id": "15084",
+  "acquired": "20130212",
+  "sensor": "Pleiades",
+  "res_m": "0.5",
+  "vendor": "CNES/Airbus DS",
+  "product": "",
+  "first_release": "2015-03-18"
+ },
+ {
+  "release_id": "18966",
+  "acquired": "20140129",
+  "sensor": "GE01",
+  "res_m": "0.46",
+  "vendor": "DigitalGlobe",
+  "product": "Metro",
+  "first_release": "2016-12-20"
+ },
+ {
+  "release_id": "25521",
+  "acquired": "20170119",
+  "sensor": "WV02",
+  "res_m": "0.5",
+  "vendor": "DigitalGlobe",
+  "product": "Metro",
+  "first_release": "2017-11-16"
+ },
+ {
+  "release_id": "18820",
+  "acquired": "20171227",
+  "sensor": "WV03_VNIR",
+  "res_m": "0.31",
+  "vendor": "DigitalGlobe",
+  "product": "Metro",
+  "first_release": "2018-10-17"
+ },
+ {
+  "release_id": "4756",
+  "acquired": "20190201",
+  "sensor": "WV03_VNIR",
+  "res_m": "0.31",
+  "vendor": "DigitalGlobe",
+  "product": "Metro",
+  "first_release": "2019-12-12"
+ },
+ {
+  "release_id": "19187",
+  "acquired": "20200220",
+  "sensor": "WV02",
+  "res_m": "0.5",
+  "vendor": "Maxar",
+  "product": "Metro",
+  "first_release": "2020-09-23"
+ },
+ {
+  "release_id": "10321",
+  "acquired": "20210827",
+  "sensor": "WV02",
+  "res_m": "0.5",
+  "vendor": "Maxar",
+  "product": "Metro",
+  "first_release": "2022-03-16"
+ },
+ {
+  "release_id": "17632",
+  "acquired": "20230221",
+  "sensor": "WV02",
+  "res_m": "0.5",
+  "vendor": "Maxar",
+  "product": "Vivid Advanced",
+  "first_release": "2023-08-10"
+ },
+ {
+  "release_id": "34007",
+  "acquired": "20231130",
+  "sensor": "WV03",
+  "res_m": "0.31",
+  "vendor": "Maxar",
+  "product": "Vivid Advanced",
+  "first_release": "2025-02-27"
+ },
+ {
+  "release_id": "51127",
+  "acquired": "20250107",
+  "sensor": "WV02",
+  "res_m": "0.5",
+  "vendor": "Vantor",
+  "product": "Vivid Advanced",
+  "first_release": "2025-11-20"
+ },
+ {
+  "release_id": "63116",
+  "acquired": "20260116",
+  "sensor": "LG06",
+  "res_m": "0.34",
+  "vendor": "Vantor",
+  "product": "Vivid Advanced",
+  "first_release": "2026-09-24"
+ }
+]

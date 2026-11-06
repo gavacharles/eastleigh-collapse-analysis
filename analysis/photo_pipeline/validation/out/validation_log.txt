@@ -1,0 +1,31 @@
+[v1] prior-only: top1 0.33 top3 0.75 AUC 0.83 Brier 0.259
+[v1] A: top1 0.50 top3 0.58 AUC 0.90 Brier 0.192 skill +0.26
+[v1] B: top1 0.50 top3 0.58 AUC 0.90 Brier 0.191 skill +0.26
+    rana_plaza_2013        A: #1 Extra storeys/Deficient materials/L0 load-path loss  B: #1 Extra storeys/Deficient materials/L0 load-path loss
+    sampoong_1995          A: #4 Deficient materials/L0 load-path loss/Extra storeys  B: #4 Deficient materials/L0 load-path loss/Extra storeys
+    harbour_cay_1981       A: #4 Deficient materials/L0 load-path loss/Extra storeys  B: #4 Deficient materials/L0 load-path loss/Extra storeys
+    lotus_riverside_2009   A: #1 Foundation failure/Deficient materials/Extra storeys  B: #1 Foundation failure/Deficient materials/Extra storeys
+    ronan_point_1968       A: #7 Deficient materials/L0 load-path loss/Extra storeys  B: #7 Deficient materials/L0 load-path loss/Extra storeys
+    ikoyi_2021             A: #3 Deficient materials/L0 load-path loss/Extra storeys  B: #3 Deficient materials/L0 load-path loss/Extra storeys
+    scoan_2014             A: #1 Extra storeys/Deficient materials/L0 load-path loss  B: #1 Extra storeys/Deficient materials/L0 load-path loss
+    ita_faji_2019          A: #1 Deficient materials/L0 load-path loss/Extra storeys  B: #1 Deficient materials/L0 load-path loss/Extra storeys
+    ronesans_2023          A: #7 Foundation failure/Deficient materials/Extra storeys  B: #7 Foundation failure/Deficient materials/Extra storeys
+    hotel_new_world_1986   A: #4 Deficient materials/L0 load-path loss/Extra storeys  B: #4 Deficient materials/L0 load-path loss/Extra storeys
+    melcom_2012            A: #1 Deficient materials/L0 load-path loss/Extra storeys  B: #1 Deficient materials/L0 load-path loss/Extra storeys
+    surfside_2021          A: #1 Deficient materials/L0 load-path loss/Extra storeys  B: #1 Deficient materials/L0 load-path loss/Extra storeys
+    unencoded: {'rana_plaza_2013': ['RECORD_FLOORS_EXCEED_PERMIT', 'RECORD_USE_CHANGE_OVERLOAD'], 'harbour_cay_1981': ['RECORD_POUR_IN_PROGRESS'], 'lotus_riverside_2009': ['PILES_OR_FOOTINGS_EXPOSED_FAILED'], 'ronan_point_1968': ['RECORD_EXPLOSION_REPORTED', 'WALL_PANELS_BLOWN_OUT'], 'ikoyi_2021': ['RECORD_FLOORS_EXCEED_PERMIT'], 'scoan_2014': ['RECORD_FLOORS_EXCEED_PERMIT'], 'ita_faji_2019': ['RECORD_USE_CHANGE_OVERLOAD'], 'ronesans_2023': ['RECORD_EARTHQUAKE', 'WIDESPREAD_DAMAGE_NEARBY']}
+[v2] prior-only: top1 0.33 top3 0.75 AUC 0.83 Brier 0.259
+[v2] A: top1 0.58 top3 0.92 AUC 0.92 Brier 0.165 skill +0.36
+[v2] B: top1 0.67 top3 1.00 AUC 0.94 Brier 0.137 skill +0.47
+    rana_plaza_2013        A: #1 Extra storeys / overload/Deficient materials/L0 load-path loss  B: #1 Extra storeys / overload/Deficient materials/L0 load-path loss
+    sampoong_1995          A: #3 Deficient materials/L0 load-path loss/Design deficiency  B: #3 Deficient materials/L0 load-path loss/Design deficiency
+    harbour_cay_1981       A: #3 Deficient materials/L0 load-path loss/Design deficiency  B: #3 Deficient materials/L0 load-path loss/Design deficiency
+    lotus_riverside_2009   A: #1 Foundation failure/Deficient materials/Design deficiency  B: #1 Foundation failure/Deficient materials/Design deficiency
+    ronan_point_1968       A: #5 Deficient materials/Design deficiency/L0 load-path loss  B: #1 Explosion/Deficient materials/Design deficiency
+    ikoyi_2021             A: #3 Deficient materials/L0 load-path loss/Design deficiency  B: #1 Extra storeys / overload/Deficient materials/L0 load-path loss
+    scoan_2014             A: #1 Extra storeys / overload/Deficient materials/L0 load-path loss  B: #1 Extra storeys / overload/Deficient materials/L0 load-path loss
+    ita_faji_2019          A: #1 Deficient materials/L0 load-path loss/Design deficiency  B: #2 Extra storeys / overload/Deficient materials/L0 load-path loss
+    ronesans_2023          A: #1 Lateral event/Foundation failure/Deficient materials  B: #1 Lateral event/Foundation failure/Deficient materials
+    hotel_new_world_1986   A: #3 Deficient materials/L0 load-path loss/Design deficiency  B: #3 Deficient materials/L0 load-path loss/Design deficiency
+    melcom_2012            A: #1 Deficient materials/L0 load-path loss/Design deficiency  B: #1 Deficient materials/L0 load-path loss/Design deficiency
+    surfside_2021          A: #1 Deficient materials/L0 load-path loss/Design deficiency  B: #1 Deficient materials/L0 load-path loss/Design deficiency

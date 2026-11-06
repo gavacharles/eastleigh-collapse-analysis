@@ -1,0 +1,58 @@
+{
+ "_doc": "Bayesian network shared by all cases. Roots = candidate causes; CAP = low ground-storey capacity reserve (noisy-OR of M,X,D); INIT = local loss at ground storey (noisy-OR of A,F,CAP); CASC = cascade (high if CAP). Modes: base (INIT and CASC), blast, top, lat. Expert-elicited; edit and re-run.",
+ "roots": [
+  "A",
+  "M",
+  "X",
+  "D",
+  "F",
+  "B",
+  "T",
+  "Q"
+ ],
+ "labels": {
+  "A": "Loss or alteration of ground-storey load-bearing elements (removal, damage, cutting)",
+  "M": "Deficient materials / workmanship (low-strength concrete, poor steel)",
+  "X": "Extra storeys / vertical extension beyond design",
+  "D": "Design or detailing deficiency (undersized columns, weak ties)",
+  "F": "Foundation failure (bearing, settlement, expansive clay, excavation)",
+  "B": "Explosion (gas or deliberate)",
+  "T": "Top-down construction failure (formwork / upper-floor overload)",
+  "Q": "Lateral event (earthquake / wind)"
+ },
+ "short": {
+  "A": "L0 load-path loss",
+  "M": "Deficient materials",
+  "X": "Extra storeys",
+  "D": "Design deficiency",
+  "F": "Foundation failure",
+  "B": "Explosion",
+  "T": "Top-down construction",
+  "Q": "Lateral event"
+ },
+ "prior": {
+  "A": 0.25,
+  "M": 0.5,
+  "X": 0.3,
+  "D": 0.3,
+  "F": 0.15,
+  "B": 0.01,
+  "T": 0.08,
+  "Q": 0.005
+ },
+ "cpt": {
+  "cap_M": 0.6,
+  "cap_X": 0.55,
+  "cap_D": 0.5,
+  "cap_leak": 0.05,
+  "init_A": 0.7,
+  "init_F": 0.5,
+  "init_CAP": 0.25,
+  "init_leak": 0.01,
+  "casc_CAP": 0.85,
+  "casc_noCAP": 0.15,
+  "blast": 0.7,
+  "top": 0.6,
+  "lateral": 0.5
+ }
+}

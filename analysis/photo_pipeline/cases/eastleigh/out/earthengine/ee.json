@@ -1,0 +1,100 @@
+{
+ "project": "YOUR_EARTH_ENGINE_PROJECT",
+ "heights": [
+  {
+   "year": 2016,
+   "h_max_m": 17.7,
+   "h_mean_m": 13.3,
+   "storeys_est": 5.5
+  },
+  {
+   "year": 2017,
+   "h_max_m": 14.8,
+   "h_mean_m": 11.9,
+   "storeys_est": 4.6
+  },
+  {
+   "year": 2018,
+   "h_max_m": 17.7,
+   "h_mean_m": 14.3,
+   "storeys_est": 5.5
+  },
+  {
+   "year": 2019,
+   "h_max_m": 18.0,
+   "h_mean_m": 14.2,
+   "storeys_est": 5.6
+  },
+  {
+   "year": 2020,
+   "h_max_m": 34.7,
+   "h_mean_m": 14.1,
+   "storeys_est": 10.8
+  },
+  {
+   "year": 2021,
+   "h_max_m": 38.2,
+   "h_mean_m": 16.1,
+   "storeys_est": 12.0
+  },
+  {
+   "year": 2022,
+   "h_max_m": 43.7,
+   "h_mean_m": 16.8,
+   "storeys_est": 13.7
+  },
+  {
+   "year": 2023,
+   "h_max_m": 38.9,
+   "h_mean_m": 17.4,
+   "storeys_est": 12.2
+  }
+ ],
+ "optical": {
+  "before": {
+   "n": 12,
+   "dates": [
+    "2026-08-25",
+    "2026-08-30",
+    "2026-09-04",
+    "2026-09-19",
+    "2026-09-24",
+    "2026-10-01",
+    "2026-10-04",
+    "2026-10-09",
+    "2026-10-14",
+    "2026-10-19",
+    "2026-10-21"
+   ],
+   "clear_at_site": true
+  },
+  "after": {
+   "n": 1,
+   "dates": [
+    "2026-10-24"
+   ],
+   "clear_at_site": false
+  }
+ },
+ "radar": {
+  "before": {
+   "n": 4,
+   "relative_orbit": 57
+  },
+  "after": {
+   "n": 1,
+   "relative_orbit": 57
+  }
+ },
+ "change": {
+  "radar_vv_change_db": 0.62
+ },
+ "thumb_m": 800,
+ "proposals": [
+  {
+   "item": "DESK_RAPID_VERTICAL_GROWTH",
+   "reason": "plot height 14.8 m (2017) to 34.7 m (2020)"
+  }
+ ],
+ "sources": "Google Open Buildings 2.5D Temporal v1; Copernicus Sentinel-2 and Sentinel-1 (ESA), via Google Earth Engine"
+}

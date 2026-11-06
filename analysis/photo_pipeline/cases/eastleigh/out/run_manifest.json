@@ -1,0 +1,76 @@
+{
+ "run_utc": "2026-10-29T07:07:48+00:00",
+ "stages": [
+  "report"
+ ],
+ "python": "3.9.6",
+ "packages": {
+  "opencv-python-headless": "5.0.0.93",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "matplotlib": "3.9.4",
+  "Pillow": "11.3.0",
+  "ImageHash": "4.3.2"
+ },
+ "config_sha256": {
+  "network.json": "6f8e60cc8ab2596b",
+  "evidence_library.json": "7f637e1baeb66732"
+ },
+ "case_sha256": {
+  "case.json": "ae7f6fc531fe9bb9",
+  "tags.json": "a81a5f41752af647"
+ },
+ "code_sha256": {
+  "bn.py": "05cf150121b02dc8",
+  "context.py": "d8abe073a1b1b7d6",
+  "core.py": "07068cfe5f381163",
+  "earthengine.py": "09ae0b7d7a00a610",
+  "field.py": "5e8feea85d54b3b9",
+  "figures.py": "b4a14d460df442cb",
+  "new_case.py": "9a5d83e734871c91",
+  "run.py": "0e08386e085e0284"
+ },
+ "face_model": "OpenCV Zoo YuNet 2023mar",
+ "inputs": [
+  [
+   "840733.jpg",
+   "9be7628132f43b3f"
+  ],
+  [
+   "840734.jpg",
+   "6c6ca8e9f1fadefe"
+  ],
+  [
+   "840735.jpg",
+   "06841a02969918c6"
+  ],
+  [
+   "841317.jpg",
+   "5263bcc3e1d40905"
+  ],
+  [
+   "841321.jpg",
+   "a76b68b67eddee9f"
+  ],
+  [
+   "841322.jpg",
+   "b769b1fcd88ee7d7"
+  ],
+  [
+   "841323.jpg",
+   "656f39730e4a7a99"
+  ],
+  [
+   "841325.jpg",
+   "22ba2790aede67ef"
+  ],
+  [
+   "841326.jpg",
+   "f0ae9518d97cb3df"
+  ],
+  [
+   "841382.jpg",
+   "f84e0b17b6f66901"
+  ]
+ ]
+}
