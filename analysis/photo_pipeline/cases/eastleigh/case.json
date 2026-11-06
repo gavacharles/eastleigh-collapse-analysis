@@ -1,0 +1,170 @@
+{
+ "name": "Eastleigh collapse",
+ "site": "LR No. 36/II/40, 9th Street, Eastleigh, Kamukunji Sub-County, Nairobi",
+ "event_date": "2026-10-23",
+ "photo_dir": "../../../..",
+ "photo_glob": "84*.jpg",
+ "credit": "Credit: Gava Charles",
+ "photo_source": "site photographs supplied to Gava Charles",
+ "location": {
+  "lat": -1.27585,
+  "lon": 36.85125,
+  "note": "Ninth St x 2nd Ave Eastleigh, approx. (+/-100 m); plot not confirmed"
+ },
+ "ee_project": "YOUR_EARTH_ENGINE_PROJECT",
+ "record_evidence": [
+  "RECORD_CRACKS_REPORTED",
+  "RECORD_OCCUPIED_NO_CERT"
+ ],
+ "desk_evidence": [],
+ "external_evidence": {
+  "_doc": "Case-specific non-photo evidence (here: findings of the video analysis), same term format as the library.",
+  "VIDEO_BASE_FIRST": {
+   "desc": "Video: failure began at the base; upper block intact",
+   "terms": [
+    {
+     "type": "modes",
+     "p": {
+      "base": 0.9,
+      "blast": 0.5,
+      "top": 0.05,
+      "lat": 0.3
+     }
+    }
+   ]
+  },
+  "VIDEO_CORNER_FIRST": {
+   "desc": "Video: first motion at the street-corner end",
+   "terms": [
+    {
+     "type": "noisy_or",
+     "when": "base",
+     "of": [
+      "A",
+      "F",
+      "cap"
+     ],
+     "w": [
+      0.7,
+      0.8,
+      0.3
+     ],
+     "leak": 0.05
+    },
+    {
+     "type": "flag",
+     "flag": "blast",
+     "p": [
+      0.3,
+      1.0
+     ]
+    },
+    {
+     "type": "any",
+     "of": [
+      "top",
+      "lat"
+     ],
+     "p": [
+      0.2,
+      1.0
+     ]
+    }
+   ]
+  },
+  "VIDEO_RUBBLE_AT_L0": {
+   "desc": "Video: rubble, ladders, missing blockwork at L0 before collapse",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "A",
+     "p": [
+      0.9,
+      0.35
+     ]
+    }
+   ]
+  },
+  "VIDEO_NO_BLAST": {
+   "desc": "Video: no flash or blast; ~1 s progressive initiation",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "blast",
+     "p": [
+      0.05,
+      0.95
+     ]
+    }
+   ]
+  },
+  "VIDEO_CRUSHUP_FIT": {
+   "desc": "Video: resistance ~0.4 W rising; crush-up fits",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "base_only",
+     "p": [
+      0.8,
+      0.4
+     ]
+    }
+   ]
+  },
+  "VIDEO_NO_SWAY": {
+   "desc": "Video: no sway or toppling",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "lat",
+     "p": [
+      0.05,
+      0.95
+     ]
+    }
+   ]
+  },
+  "TWIN_LOW_RESERVE": {
+   "desc": "FE twin: only low-reserve configurations reproduce the zipper",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "cap",
+     "p": [
+      0.75,
+      0.3
+     ]
+    }
+   ]
+  }
+ },
+ "scenarios": {
+  "A  Photos only": [
+   "photos"
+  ],
+  "B  Photos + public record": [
+   "photos",
+   "record"
+  ],
+  "C  Photos + record + video": [
+   "photos",
+   "record",
+   "external"
+  ]
+ },
+ "measurements": {
+  "layer_count": {
+   "photo": "841382.jpg",
+   "x_range": [
+    0.3,
+    0.7
+   ],
+   "y_range": [
+    0.25,
+    0.5
+   ]
+  },
+  "neighbour_storeys_min": 11
+ },
+ "redaction_note": "Engineers' vests show an institution logo; no individuals identifiable after blurring."
+}

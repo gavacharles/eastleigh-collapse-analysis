@@ -1,0 +1,509 @@
+{
+ "_doc": "Engineer-reviewed observations. box = [x0,y0,x1,y1] normalised. evidence = evidence_library item id. confidence high|medium|low (low items are shown but excluded from inference unless reviewed up).",
+ "photos": {
+  "840733.jpg": {
+   "view": "element",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Mill marking '...EVKI TMT B500...' (Devki Steel Mills, Kenya)",
+     "category": "material",
+     "confidence": "medium",
+     "box": [
+      0.0,
+      0.42,
+      1.0,
+      0.57
+     ],
+     "evidence": "REBAR_MILL_MARKED"
+    },
+    {
+     "id": "o2",
+     "label": "Round timber pole (eucalyptus prop)",
+     "category": "construction_stage",
+     "confidence": "high",
+     "box": [
+      0.6,
+      0.07,
+      0.9,
+      1.0
+     ],
+     "evidence": "ACTIVE_CONSTRUCTION_PROPS"
+    },
+    {
+     "id": "o3",
+     "label": "Bar with 90-degree bend (link or hook; type unconfirmed)",
+     "category": "element",
+     "confidence": "low",
+     "box": [
+      0.78,
+      0.03,
+      0.88,
+      0.37
+     ]
+    }
+   ]
+  },
+  "840734.jpg": {
+   "view": "element",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Mill marking 'JUMBO-TMT'",
+     "category": "material",
+     "confidence": "high",
+     "box": [
+      0.0,
+      0.43,
+      1.0,
+      0.6
+     ],
+     "evidence": "REBAR_MILL_MARKED"
+    }
+   ]
+  },
+  "840735.jpg": {
+   "view": "element",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Mill marking 'TNK ... 25 ... B500' (marked 25 mm, B500: claimed, not verified)",
+     "category": "material",
+     "confidence": "medium",
+     "box": [
+      0.0,
+      0.31,
+      1.0,
+      0.54
+     ],
+     "evidence": "REBAR_MILL_MARKED"
+    },
+    {
+     "id": "o2",
+     "label": "Open-textured, voided fragment: concrete block or honeycombed concrete (verify)",
+     "category": "material",
+     "confidence": "low",
+     "box": [
+      0.38,
+      0.0,
+      0.9,
+      0.36
+     ],
+     "evidence": "POSSIBLE_HONEYCOMBING"
+    }
+   ]
+  },
+  "841317.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Slabs stacked flat (pancake)",
+     "category": "collapse_mode",
+     "confidence": "high",
+     "box": [
+      0.0,
+      0.37,
+      0.27,
+      0.67
+     ],
+     "evidence": "PANCAKE_IN_FOOTPRINT"
+    },
+    {
+     "id": "o2",
+     "label": "Dense tangle of released reinforcement",
+     "category": "collapse_mode",
+     "confidence": "high",
+     "box": [
+      0.22,
+      0.19,
+      0.64,
+      0.6
+     ]
+    },
+    {
+     "id": "o3",
+     "label": "Neighbour facade punched by debris",
+     "category": "neighbour",
+     "confidence": "high",
+     "box": [
+      0.02,
+      0.12,
+      0.2,
+      0.19
+     ],
+     "evidence": "NEIGHBOUR_DAMAGED_TO_HEIGHT"
+    },
+    {
+     "id": "o4",
+     "label": "Timber props throughout the debris",
+     "category": "construction_stage",
+     "confidence": "high",
+     "box": [
+      0.36,
+      0.7,
+      0.85,
+      1.0
+     ],
+     "evidence": "ACTIVE_CONSTRUCTION_PROPS"
+    }
+   ]
+  },
+  "841321.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Neighbour roof edge and parapet torn: collapsed building was at least as tall",
+     "category": "neighbour",
+     "confidence": "high",
+     "box": [
+      0.34,
+      0.1,
+      0.78,
+      0.2
+     ],
+     "evidence": "NEIGHBOUR_DAMAGED_TO_HEIGHT"
+    },
+    {
+     "id": "o2",
+     "label": "Neighbour facade punched at several storeys",
+     "category": "neighbour",
+     "confidence": "high",
+     "box": [
+      0.17,
+      0.18,
+      0.29,
+      0.26
+     ],
+     "evidence": "NEIGHBOUR_DAMAGED_TO_HEIGHT"
+    },
+    {
+     "id": "o3",
+     "label": "Debris pile crest",
+     "category": "collapse_mode",
+     "confidence": "medium",
+     "box": [
+      0.3,
+      0.29,
+      0.62,
+      0.37
+     ]
+    },
+    {
+     "id": "o4",
+     "label": "Timber props in debris",
+     "category": "construction_stage",
+     "confidence": "high",
+     "box": [
+      0.49,
+      0.63,
+      0.8,
+      0.87
+     ],
+     "evidence": "ACTIVE_CONSTRUCTION_PROPS"
+    }
+   ]
+  },
+  "841322.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Pancaked slab stack, near-vertical, no tilt",
+     "category": "collapse_mode",
+     "confidence": "high",
+     "box": [
+      0.62,
+      0.19,
+      1.0,
+      0.57
+     ],
+     "evidence": "PANCAKE_IN_FOOTPRINT"
+    },
+    {
+     "id": "o2",
+     "label": "Void at base of stack (rescue-relevant)",
+     "category": "rescue",
+     "confidence": "high",
+     "box": [
+      0.74,
+      0.53,
+      0.87,
+      0.6
+     ],
+     "evidence": "VOIDS_UNDER_STACK"
+    },
+    {
+     "id": "o3",
+     "label": "Debris confined to footprint and adjoining street",
+     "category": "collapse_mode",
+     "confidence": "medium",
+     "box": [
+      0.4,
+      0.57,
+      1.0,
+      0.8
+     ],
+     "evidence": "NO_TILT"
+    }
+   ]
+  },
+  "841323.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Pancaked slab stack, near-vertical, no tilt",
+     "category": "collapse_mode",
+     "confidence": "high",
+     "box": [
+      0.76,
+      0.23,
+      1.0,
+      0.51
+     ],
+     "evidence": "NO_TILT"
+    }
+   ]
+  },
+  "841325.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Neighbour facade punched at several storeys",
+     "category": "neighbour",
+     "confidence": "high",
+     "box": [
+      0.47,
+      0.11,
+      0.66,
+      0.22
+     ],
+     "evidence": "NEIGHBOUR_DAMAGED_TO_HEIGHT"
+    },
+    {
+     "id": "o2",
+     "label": "Debris pile, mostly within the plot",
+     "category": "collapse_mode",
+     "confidence": "medium",
+     "box": [
+      0.44,
+      0.22,
+      0.9,
+      0.52
+     ]
+    },
+    {
+     "id": "o3",
+     "label": "Adjacent kiosks crushed by debris spill",
+     "category": "neighbour",
+     "confidence": "high",
+     "box": [
+      0.78,
+      0.37,
+      1.0,
+      0.57
+     ]
+    }
+   ]
+  },
+  "841326.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Neighbour facade punched at several storeys",
+     "category": "neighbour",
+     "confidence": "high",
+     "box": [
+      0.56,
+      0.1,
+      0.72,
+      0.21
+     ],
+     "evidence": "NEIGHBOUR_DAMAGED_TO_HEIGHT"
+    },
+    {
+     "id": "o2",
+     "label": "Debris pile, mostly within the plot",
+     "category": "collapse_mode",
+     "confidence": "medium",
+     "box": [
+      0.53,
+      0.18,
+      1.0,
+      0.5
+     ]
+    }
+   ]
+  },
+  "841382.jpg": {
+   "view": "wide",
+   "observations": [
+    {
+     "id": "o1",
+     "label": "Corner of the pancake stack: 11+ slab layers, flat and tightly stacked, no column stubs between",
+     "category": "collapse_mode",
+     "confidence": "high",
+     "box": [
+      0.2,
+      0.03,
+      0.83,
+      0.47
+     ],
+     "evidence": "NO_COLUMN_STUBS_BETWEEN_SLABS"
+    },
+    {
+     "id": "o2",
+     "label": "White void formers in slab edges (likely EPS ribbed slab)",
+     "category": "element",
+     "confidence": "medium",
+     "box": [
+      0.38,
+      0.31,
+      0.58,
+      0.34
+     ],
+     "evidence": "RIBBED_EPS_SLABS"
+    },
+    {
+     "id": "o3",
+     "label": "Void beneath the stack",
+     "category": "rescue",
+     "confidence": "high",
+     "box": [
+      0.43,
+      0.48,
+      0.54,
+      0.55
+     ],
+     "evidence": "VOIDS_UNDER_STACK"
+    }
+   ]
+  }
+ },
+ "redact_manual": {
+  "_note": "extra boxes [x0,y0,x1,y1] normalised, added after reviewing automatic face blurring",
+  "841322.jpg": [
+   [
+    0.0,
+    0.4,
+    0.2,
+    0.52
+   ],
+   [
+    0.2,
+    0.43,
+    0.28,
+    0.5
+   ],
+   [
+    0.32,
+    0.49,
+    0.37,
+    0.53
+   ],
+   [
+    0.26,
+    0.4,
+    0.3,
+    0.44
+   ],
+   [
+    0.28,
+    0.44,
+    0.36,
+    0.53
+   ]
+  ],
+  "841323.jpg": [
+   [
+    0.15,
+    0.38,
+    0.24,
+    0.47
+   ],
+   [
+    0.42,
+    0.455,
+    0.5,
+    0.485
+   ],
+   [
+    0.39,
+    0.37,
+    0.44,
+    0.41
+   ],
+   [
+    0.26,
+    0.4,
+    0.36,
+    0.48
+   ]
+  ],
+  "841325.jpg": [
+   [
+    0.0,
+    0.39,
+    0.13,
+    0.5
+   ],
+   [
+    0.12,
+    0.42,
+    0.22,
+    0.49
+   ],
+   [
+    0.16,
+    0.43,
+    0.3,
+    0.48
+   ],
+   [
+    0.38,
+    0.41,
+    0.45,
+    0.46
+   ]
+  ],
+  "841326.jpg": [
+   [
+    0.0,
+    0.4,
+    0.17,
+    0.48
+   ],
+   [
+    0.17,
+    0.41,
+    0.33,
+    0.48
+   ],
+   [
+    0.36,
+    0.4,
+    0.46,
+    0.45
+   ],
+   [
+    0.1,
+    0.42,
+    0.18,
+    0.46
+   ]
+  ],
+  "841317.jpg": [],
+  "841321.jpg": [
+   [
+    0.72,
+    0.38,
+    0.92,
+    0.46
+   ]
+  ]
+ }
+}

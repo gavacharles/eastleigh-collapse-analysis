@@ -1,0 +1,639 @@
+{
+ "_doc": [
+  "Generic evidence items for photo-based collapse screening. Each item: theme, description, what to look for, and likelihood terms.",
+  "Likelihood terms multiply. Types:",
+  "  flag:     {flag, p:[p_if_true, p_if_false]}  flags = causes A,M,X,D,F + cap + modes base, blast, top, lat, base_only",
+  "  any:      {of:[flags], p:[p_if_any_true, p_if_none]}",
+  "  modes:    {p:{mode: value}} multiplied for every collapse mode that occurred",
+  "  noisy_or: {when: flag, of:[flags], w:[weights], leak}",
+  "Values are expert-elicited (P(observation | state)). They are deliberately moderate: photos are indirect evidence.",
+  "value: 'high' items are the ones worth asking for when missing (listed as data gaps in the report).",
+  "contradicted_by: items that cannot both be true; a contradicted item is not listed as a data gap.",
+  "v2 (2026-10-29): items WIDESPREAD_DAMAGE_NEARBY, PILES_OR_FOOTINGS_EXPOSED_FAILED, WALL_PANELS_BLOWN_OUT and five RECORD_* items added after validation (validation/README.md) showed these modes had no discriminating evidence. Values set by judgement before re-running, not tuned to the benchmark.",
+  "Desk items (theme desk) are proposed automatically by the context stage from open data and only enter the ranking when the engineer lists them in case.json desk_evidence. RECORD_EARTHQUAKE is proposed the same way from the USGS catalogue."
+ ],
+ "themes": {
+  "collapse_mode": "How it came down",
+  "material": "Steel and concrete",
+  "element": "Members and detailing",
+  "construction_stage": "Construction stage and loading",
+  "neighbour": "Neighbouring buildings and height",
+  "foundation": "Ground and foundations",
+  "rescue": "Voids and rescue",
+  "record": "Public record (non-photo)",
+  "desk": "Open data (desk study)"
+ },
+ "items": {
+  "PANCAKE_IN_FOOTPRINT": {
+   "theme": "collapse_mode",
+   "value": "high",
+   "desc": "Slabs stacked flat (pancake) within or next to the footprint, no overturning",
+   "look_for": "Wide shots from two or more sides showing stacked slabs and debris extent",
+   "terms": [
+    {
+     "type": "modes",
+     "p": {
+      "base": 0.9,
+      "top": 0.25,
+      "blast": 0.3
+     }
+    },
+    {
+     "type": "any",
+     "of": [
+      "base",
+      "top",
+      "blast"
+     ],
+     "p": [
+      1.0,
+      0.05
+     ]
+    }
+   ],
+   "contradicted_by": [
+    "TILTED_OR_OVERTURNED"
+   ]
+  },
+  "NO_TILT": {
+   "theme": "collapse_mode",
+   "value": "high",
+   "desc": "No tilt or rotation of the collapsed mass; debris confined to footprint and adjoining street",
+   "look_for": "Stack edges vertical; no rotated block; debris not thrown away from one side",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.35,
+      0.85
+     ]
+    },
+    {
+     "type": "flag",
+     "flag": "lat",
+     "p": [
+      0.05,
+      1.0
+     ]
+    }
+   ],
+   "contradicted_by": [
+    "TILTED_OR_OVERTURNED"
+   ]
+  },
+  "TILTED_OR_OVERTURNED": {
+   "theme": "collapse_mode",
+   "value": "high",
+   "desc": "Collapsed mass tilted, rotated or overturned to one side",
+   "look_for": "Block lying on its side; slabs inclined consistently; one side of the footprint sunk",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.6,
+      0.08
+     ]
+    },
+    {
+     "type": "flag",
+     "flag": "lat",
+     "p": [
+      0.7,
+      0.1
+     ]
+    }
+   ],
+   "contradicted_by": [
+    "NO_TILT"
+   ]
+  },
+  "NO_COLUMN_STUBS_BETWEEN_SLABS": {
+   "theme": "collapse_mode",
+   "value": "medium",
+   "desc": "Slabs tightly stacked with no column stubs between: columns crushed or punched through over the full storey",
+   "look_for": "Stack edge close-up; gaps between slabs; column remnants",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "base",
+     "p": [
+      0.85,
+      0.5
+     ]
+    }
+   ]
+  },
+  "DEBRIS_THROWN_FAR": {
+   "theme": "collapse_mode",
+   "value": "medium",
+   "desc": "Debris projected far beyond the footprint, glass and fragments scattered radially",
+   "look_for": "Debris field extent vs building height; radial pattern",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "blast",
+     "p": [
+      0.7,
+      0.1
+     ]
+    }
+   ],
+   "contradicted_by": [
+    "NO_TILT"
+   ]
+  },
+  "SCORCH_OR_BLAST_MARKS": {
+   "theme": "collapse_mode",
+   "value": "medium",
+   "desc": "Scorching, soot or blast damage on fragments or neighbours",
+   "look_for": "Blackened surfaces, melted plastics, outward-bowed neighbour openings",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "blast",
+     "p": [
+      0.6,
+      0.03
+     ]
+    }
+   ]
+  },
+  "REBAR_MILL_MARKED": {
+   "theme": "material",
+   "value": "low",
+   "desc": "Bars carry grade markings from recognised mills (grade claimed, not verified)",
+   "look_for": "Rolled-in markings on bars. Does NOT verify diameter, yield, ductility, or rule out counterfeit/re-rolled bars",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "M",
+     "p": [
+      0.65,
+      0.75
+     ]
+    }
+   ]
+  },
+  "REBAR_UNDERSIZED_OR_SMOOTH": {
+   "theme": "material",
+   "value": "high",
+   "desc": "Main bars undersized for the member, or smooth/re-rolled bars in primary members",
+   "look_for": "Bar diameter against a tape or caliper; deformations; marking absent",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "M",
+     "p": [
+      0.75,
+      0.15
+     ]
+    }
+   ]
+  },
+  "REBAR_CORRODED": {
+   "theme": "material",
+   "value": "medium",
+   "desc": "Significant corrosion or section loss on bars",
+   "look_for": "Flaky rust, pitting, reduced section at fracture",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "M",
+     "p": [
+      0.5,
+      0.15
+     ]
+    }
+   ]
+  },
+  "POSSIBLE_HONEYCOMBING": {
+   "theme": "material",
+   "value": "medium",
+   "desc": "Open-textured, voided concrete fragment: possible honeycombing (unverified)",
+   "look_for": "Fresh fracture faces of columns/slabs; voids, poor compaction, segregated aggregate",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "M",
+     "p": [
+      0.6,
+      0.4
+     ]
+    }
+   ]
+  },
+  "POOR_CONCRETE_CONFIRMED": {
+   "theme": "material",
+   "value": "high",
+   "desc": "Friable concrete that crumbles by hand, weak aggregate, or low core/rebound results",
+   "look_for": "Fracture faces; hand-crushing; rebound hammer or cores",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "M",
+     "p": [
+      0.85,
+      0.15
+     ]
+    }
+   ]
+  },
+  "SPARSE_TIES_90_HOOKS": {
+   "theme": "element",
+   "value": "high",
+   "desc": "Column ties widely spaced (> ~200 mm) and/or 90-degree hooks that opened",
+   "look_for": "Column stub close-ups with tape: tie spacing, hook angle, opened ties",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "D",
+     "p": [
+      0.7,
+      0.3
+     ]
+    },
+    {
+     "type": "flag",
+     "flag": "cap",
+     "p": [
+      0.7,
+      0.4
+     ]
+    }
+   ]
+  },
+  "LAPS_AT_ONE_LEVEL": {
+   "theme": "element",
+   "value": "medium",
+   "desc": "All column bars lapped at the same level, short laps",
+   "look_for": "Column stub at floor level: bar ends, lap length vs bar diameter",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "D",
+     "p": [
+      0.65,
+      0.35
+     ]
+    }
+   ]
+  },
+  "SMALL_COLUMNS_FOR_HEIGHT": {
+   "theme": "element",
+   "value": "high",
+   "desc": "Ground-storey columns small for the number of storeys",
+   "look_for": "Column dimensions with tape; storey count",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "cap",
+     "p": [
+      0.75,
+      0.3
+     ]
+    },
+    {
+     "type": "flag",
+     "flag": "D",
+     "p": [
+      0.6,
+      0.35
+     ]
+    }
+   ]
+  },
+  "CUT_OR_REMOVED_GROUND_ELEMENTS": {
+   "theme": "element",
+   "value": "high",
+   "desc": "Ground-storey columns or walls cut, chased or removed (shopfronts, openings)",
+   "look_for": "Saw cuts, chased services, missing columns, fresh openings at L0",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "A",
+     "p": [
+      0.8,
+      0.1
+     ]
+    }
+   ]
+  },
+  "RIBBED_EPS_SLABS": {
+   "theme": "element",
+   "value": "low",
+   "desc": "Ribbed slabs with lightweight void formers (EPS)",
+   "look_for": "White void formers in slab edges",
+   "terms": []
+  },
+  "ACTIVE_CONSTRUCTION_PROPS": {
+   "theme": "construction_stage",
+   "value": "medium",
+   "desc": "Timber or steel props throughout the debris: active construction with propped slabs",
+   "look_for": "Props, formwork, fresh concrete in upper debris",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "top",
+     "p": [
+      0.9,
+      0.8
+     ]
+    }
+   ]
+  },
+  "UPPER_FLOORS_RECENT": {
+   "theme": "construction_stage",
+   "value": "medium",
+   "desc": "Upper floors visibly newer (different materials, unfinished) than lower floors",
+   "look_for": "Pre-collapse photos or debris showing new storeys on an older frame",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "X",
+     "p": [
+      0.8,
+      0.3
+     ]
+    }
+   ]
+  },
+  "NEIGHBOUR_DAMAGED_TO_HEIGHT": {
+   "theme": "neighbour",
+   "value": "medium",
+   "desc": "Neighbour damaged up to its roof: collapsed building at least as tall",
+   "look_for": "Impact damage on adjoining facades and roof edges",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "X",
+     "p": [
+      0.8,
+      0.5
+     ]
+    }
+   ]
+  },
+  "ADJACENT_EXCAVATION": {
+   "theme": "foundation",
+   "value": "high",
+   "desc": "Recent excavation, basement or trench next to the footprint",
+   "look_for": "Open excavations, shoring, undermined footings",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.6,
+      0.08
+     ]
+    }
+   ]
+  },
+  "SETTLEMENT_OR_HEAVE": {
+   "theme": "foundation",
+   "value": "high",
+   "desc": "Ground cracking, heave, ponding or settled footings at the site",
+   "look_for": "Ground surface around footprint; exposed footings",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.7,
+      0.1
+     ]
+    }
+   ]
+  },
+  "VOIDS_UNDER_STACK": {
+   "theme": "rescue",
+   "value": "low",
+   "desc": "Survivable voids beneath or within the stack",
+   "look_for": "Openings at the base of the pile",
+   "terms": []
+  },
+  "RECORD_CRACKS_REPORTED": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "Cracks or distress reported before the collapse",
+   "terms": [
+    {
+     "type": "any",
+     "of": [
+      "cap",
+      "F",
+      "A"
+     ],
+     "p": [
+      0.6,
+      0.2
+     ]
+    }
+   ]
+  },
+  "RECORD_OCCUPIED_NO_CERT": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "Occupied while construction continued; no occupation certificate",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "X",
+     "p": [
+      0.8,
+      0.35
+     ]
+    }
+   ]
+  },
+  "WIDESPREAD_DAMAGE_NEARBY": {
+   "theme": "neighbour",
+   "value": "medium",
+   "desc": "Many surrounding buildings collapsed or heavily damaged at the same time",
+   "look_for": "Wide or aerial views: simultaneous collapses and damage across the block or district",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "lat",
+     "p": [
+      0.9,
+      0.03
+     ]
+    }
+   ]
+  },
+  "PILES_OR_FOOTINGS_EXPOSED_FAILED": {
+   "theme": "foundation",
+   "value": "medium",
+   "desc": "Piles or footings exposed and snapped, sheared or pulled out",
+   "look_for": "Underside of a toppled or displaced structure; broken pile heads; footings out of position",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.8,
+      0.05
+     ]
+    }
+   ]
+  },
+  "WALL_PANELS_BLOWN_OUT": {
+   "theme": "collapse_mode",
+   "value": "medium",
+   "desc": "Walls or panels blown outwards at one level, with the collapse confined to the bays above and below it",
+   "look_for": "Outward-displaced panels or windows at the initiating floor; partial, bay-wide collapse with the rest of the structure standing",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "blast",
+     "p": [
+      0.75,
+      0.05
+     ]
+    }
+   ]
+  },
+  "RECORD_FLOORS_EXCEED_PERMIT": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "More storeys built than approved, or storeys added without approval",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "X",
+     "p": [
+      0.85,
+      0.15
+     ]
+    }
+   ]
+  },
+  "RECORD_USE_CHANGE_OVERLOAD": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "Change of use or heavy plant beyond the design loading (factory, school, storage, generators, rooftop units)",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "X",
+     "p": [
+      0.7,
+      0.2
+     ]
+    }
+   ]
+  },
+  "RECORD_POUR_IN_PROGRESS": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "Concrete was being placed on an upper floor at the time of collapse",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "top",
+     "p": [
+      0.7,
+      0.1
+     ]
+    }
+   ]
+  },
+  "RECORD_EXPLOSION_REPORTED": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "Explosion, gas leak or blast reported by witnesses or emergency services at the time",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "blast",
+     "p": [
+      0.9,
+      0.02
+     ]
+    }
+   ]
+  },
+  "RECORD_EARTHQUAKE": {
+   "theme": "record",
+   "value": "medium",
+   "desc": "Earthquake (or extreme wind) recorded at the time of collapse",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "lat",
+     "p": [
+      0.98,
+      0.01
+     ]
+    }
+   ]
+  },
+  "DESK_ANTECEDENT_HEAVY_RAIN": {
+   "theme": "desk",
+   "value": "medium",
+   "desc": "Rain in the 30 days before the collapse above the 90th percentile for that time of year at the site",
+   "look_for": "context stage: Open-Meteo reanalysis vs the previous 10 years",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.45,
+      0.12
+     ]
+    }
+   ]
+  },
+  "DESK_NEAR_WATERCOURSE": {
+   "theme": "desk",
+   "value": "medium",
+   "desc": "Site within 30 m of a river, stream or drain (riparian or reclaimed ground)",
+   "look_for": "context stage: OpenStreetMap waterways; confirm on satellite chips",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.35,
+      0.08
+     ]
+    }
+   ]
+  },
+  "DESK_EXPANSIVE_CLAY": {
+   "theme": "desk",
+   "value": "medium",
+   "desc": "Clay-rich or Vertisol (black cotton) soil mapped at or near the site",
+   "look_for": "context stage: ISRIC SoilGrids 250 m; coarse, urban pixels are often masked",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "F",
+     "p": [
+      0.3,
+      0.15
+     ]
+    }
+   ]
+  },
+  "DESK_RAPID_VERTICAL_GROWTH": {
+   "theme": "desk",
+   "value": "medium",
+   "desc": "Plot height rose by two or more storeys within three years (satellite-derived)",
+   "look_for": "earthengine stage: Google Open Buildings 2.5D Temporal height series; confirm on Wayback chips",
+   "terms": [
+    {
+     "type": "flag",
+     "flag": "X",
+     "p": [
+      0.6,
+      0.2
+     ]
+    }
+   ]
+  }
+ }
+}

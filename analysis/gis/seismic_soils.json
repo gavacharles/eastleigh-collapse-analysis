@@ -1,0 +1,263 @@
+{
+ "seismic": {
+  "station": "AM.R8A6C",
+  "distance_km": 11.1,
+  "candidate_utc": "2026-10-23T10:36:31",
+  "candidate_eat": "2026-10-23T13:36:31",
+  "median_rms_ums": 0.225,
+  "max_rms_ums": 0.692,
+  "top_triggers": [
+   {
+    "utc": "2026-10-23T10:57:47.61",
+    "dur_s": 6.6,
+    "peak_ums": 2.64,
+    "sta_lta": 10.9
+   },
+   {
+    "utc": "2026-10-23T10:26:02.45",
+    "dur_s": 3.8,
+    "peak_ums": 3.15,
+    "sta_lta": 8.2
+   },
+   {
+    "utc": "2026-10-23T10:36:23.77",
+    "dur_s": 5.1,
+    "peak_ums": 2.66,
+    "sta_lta": 8.2
+   },
+   {
+    "utc": "2026-10-23T10:27:06.44",
+    "dur_s": 1.4,
+    "peak_ums": 2.97,
+    "sta_lta": 7.0
+   },
+   {
+    "utc": "2026-10-23T10:36:38.42",
+    "dur_s": 3.2,
+    "peak_ums": 3.16,
+    "sta_lta": 6.0
+   },
+   {
+    "utc": "2026-10-23T10:53:06.13",
+    "dur_s": 2.0,
+    "peak_ums": 0.9,
+    "sta_lta": 5.4
+   }
+  ]
+ },
+ "soils": {
+  "wrb_top": [
+   [
+    "Cambisols",
+    17
+   ],
+   [
+    "Ferralsols",
+    15
+   ],
+   [
+    "Luvisols",
+    9
+   ],
+   [
+    "Vertisols",
+    9
+   ],
+   [
+    "Acrisols",
+    7
+   ]
+  ],
+  "near_pixel": {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.86,
+     -1.27
+    ]
+   },
+   "properties": {
+    "layers": [
+     {
+      "name": "cec",
+      "unit_measure": {
+       "d_factor": 10,
+       "mapped_units": "mmol(c)/kg",
+       "target_units": "cmol(c)/kg",
+       "uncertainty_unit": ""
+      },
+      "depths": [
+       {
+        "range": {
+         "top_depth": 0,
+         "bottom_depth": 5,
+         "unit_depth": "cm"
+        },
+        "label": "0-5cm",
+        "values": {
+         "mean": 217
+        }
+       },
+       {
+        "range": {
+         "top_depth": 30,
+         "bottom_depth": 60,
+         "unit_depth": "cm"
+        },
+        "label": "30-60cm",
+        "values": {
+         "mean": 195
+        }
+       },
+       {
+        "range": {
+         "top_depth": 100,
+         "bottom_depth": 200,
+         "unit_depth": "cm"
+        },
+        "label": "100-200cm",
+        "values": {
+         "mean": 181
+        }
+       }
+      ]
+     },
+     {
+      "name": "clay",
+      "unit_measure": {
+       "d_factor": 10,
+       "mapped_units": "g/kg",
+       "target_units": "%",
+       "uncertainty_unit": ""
+      },
+      "depths": [
+       {
+        "range": {
+         "top_depth": 0,
+         "bottom_depth": 5,
+         "unit_depth": "cm"
+        },
+        "label": "0-5cm",
+        "values": {
+         "mean": 433
+        }
+       },
+       {
+        "range": {
+         "top_depth": 30,
+         "bottom_depth": 60,
+         "unit_depth": "cm"
+        },
+        "label": "30-60cm",
+        "values": {
+         "mean": 476
+        }
+       },
+       {
+        "range": {
+         "top_depth": 100,
+         "bottom_depth": 200,
+         "unit_depth": "cm"
+        },
+        "label": "100-200cm",
+        "values": {
+         "mean": 474
+        }
+       }
+      ]
+     },
+     {
+      "name": "sand",
+      "unit_measure": {
+       "d_factor": 10,
+       "mapped_units": "g/kg",
+       "target_units": "%",
+       "uncertainty_unit": ""
+      },
+      "depths": [
+       {
+        "range": {
+         "top_depth": 0,
+         "bottom_depth": 5,
+         "unit_depth": "cm"
+        },
+        "label": "0-5cm",
+        "values": {
+         "mean": 278
+        }
+       },
+       {
+        "range": {
+         "top_depth": 30,
+         "bottom_depth": 60,
+         "unit_depth": "cm"
+        },
+        "label": "30-60cm",
+        "values": {
+         "mean": 267
+        }
+       },
+       {
+        "range": {
+         "top_depth": 100,
+         "bottom_depth": 200,
+         "unit_depth": "cm"
+        },
+        "label": "100-200cm",
+        "values": {
+         "mean": 250
+        }
+       }
+      ]
+     },
+     {
+      "name": "silt",
+      "unit_measure": {
+       "d_factor": 10,
+       "mapped_units": "g/kg",
+       "target_units": "%",
+       "uncertainty_unit": ""
+      },
+      "depths": [
+       {
+        "range": {
+         "top_depth": 0,
+         "bottom_depth": 5,
+         "unit_depth": "cm"
+        },
+        "label": "0-5cm",
+        "values": {
+         "mean": 290
+        }
+       },
+       {
+        "range": {
+         "top_depth": 30,
+         "bottom_depth": 60,
+         "unit_depth": "cm"
+        },
+        "label": "30-60cm",
+        "values": {
+         "mean": 258
+        }
+       },
+       {
+        "range": {
+         "top_depth": 100,
+         "bottom_depth": 200,
+         "unit_depth": "cm"
+        },
+        "label": "100-200cm",
+        "values": {
+         "mean": 276
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "query_time_s": 4.170222520828247
+  }
+ }
+}

@@ -1,0 +1,33 @@
+# Source evidence: never commit (third-party, shows identifiable people)
+*.mp4
+!analysis/visualisations/04_physics_and_structural_mechanics/*.mp4
+!analysis/visualisations/07_digital_twin/*.mp4
+/*.jpg
+/*.jpeg
+*.wav
+analysis/visualisations/05_frame_by_frame_analysis/frames/
+analysis/visualisations/05_frame_by_frame_analysis/frame_viewer.html
+*_LOCAL*
+analysis/photo_pipeline/cases/*/out/redacted/
+analysis/photo_pipeline/cases/*/out/plates/
+analysis/photo_pipeline/cases/*/out/fig_evidence_0*.jpg
+analysis/photo_pipeline/cases/*/out/fig_summary_card.jpg
+
+# Re-downloadable third-party tiles
+analysis/gis/raw/
+analysis/photo_pipeline/cases/*/out/context/raw/
+analysis/photo_pipeline/cases/*/out/context/sat/
+analysis/visualisations/02_remote_sensing_satellite_sensors/archive_imagery_chips/
+
+# Social media and posts
+analysis/posts/
+analysis/visualisations/03_3D_reconstruction_animations/*.gif
+analysis/visualisations/03_3D_reconstruction_animations/*.jpg
+
+# Local clutter
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+venv/
+.venv/

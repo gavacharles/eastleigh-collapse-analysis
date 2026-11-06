@@ -1,0 +1,207 @@
+{
+ "_doc": "Validation benchmark: past collapses with published cause findings. 'photos' = what published photographs of the debris show (scenario A); 'record' = public record available within about a week of the event, before any inquiry (scenario B). 'truth' = inquiry or investigation finding per network root: primary | contributing | ruled_out (omitted = not established). 'tier' grades the finding: official (statutory inquiry/court/coroner), professional (engineering-body or federal-agency investigation), interim (investigation not final), expert (expert opinion only). Observations were encoded from published photograph descriptions and widely circulated imagery by an assessor who knew the outcomes (NOT blind); see README section 'Validation'. Items not present in the library version under test are reported as unencoded and ignored.",
+ "cases": {
+  "rana_plaza_2013": {
+   "name": "Rana Plaza, Savar, Bangladesh",
+   "date": "2013-04-24",
+   "storeys": 8,
+   "tier": "official",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Aerial and street photos: floors stacked flat, rear section partly standing"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No rotation of the mass; debris within the plot and road"},
+    {"item": "VOIDS_UNDER_STACK", "conf": "high", "basis": "Rescue tunnels into voids; survivors recovered up to 17 days later"},
+    {"item": "UPPER_FLOORS_RECENT", "conf": "medium", "basis": "Top floor under construction at the time"}
+   ],
+   "record": [
+    {"item": "RECORD_CRACKS_REPORTED", "conf": "high", "basis": "Cracks in walls and pillars reported and building briefly closed the day before"},
+    {"item": "RECORD_FLOORS_EXCEED_PERMIT", "conf": "high", "basis": "Officials stated within days that upper floors were added without permission"},
+    {"item": "RECORD_USE_CHANGE_OVERLOAD", "conf": "high", "basis": "Garment factories with heavy machinery and generators in a building designed as a shopping mall"}
+   ],
+   "truth": {"X": "primary", "M": "primary", "F": "contributing", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "Inquiry (Mainuddin Ahmed committee): illegal extra floors, very poor cement mix and steel, part built on a filled pond, heavy machinery and generator vibration; cracks ignored.",
+   "sources": ["https://www.foxnews.com/world/bangladesh-probe-faults-swampy-land-poor-building-materials-heavy-equipment-for-collapse", "https://www.thedailystar.net/node/1104097"]
+  },
+  "sampoong_1995": {
+   "name": "Sampoong Department Store, Seoul, South Korea",
+   "date": "1995-06-29",
+   "storeys": 5,
+   "tier": "official",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "South wing pancaked into the basements; north wing left standing"},
+    {"item": "NO_TILT", "conf": "high", "basis": "Vertical collapse, no overturning"},
+    {"item": "VOIDS_UNDER_STACK", "conf": "high", "basis": "Survivors recovered after 11 to 17 days"}
+   ],
+   "record": [
+    {"item": "RECORD_CRACKS_REPORTED", "conf": "high", "basis": "Cracks and sagging in the 5th-floor ceiling reported hours before; store not evacuated"}
+   ],
+   "truth": {"D": "primary", "A": "contributing", "X": "contributing", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "Punching shear at column 5E; columns thinned and widely spaced; columns cut for escalators; 5th-floor change of use (heavy ondol floor) and 45 t of rooftop AC units dragged over the failed column.",
+   "sources": ["https://en.wikipedia.org/wiki/Sampoong_Department_Store_collapse"]
+  },
+  "harbour_cay_1981": {
+   "name": "Harbour Cay Condominium, Cocoa Beach, Florida, USA",
+   "date": "1981-03-27",
+   "storeys": 5,
+   "tier": "professional",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "All floors pancaked within the footprint"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No rotation of the mass"},
+    {"item": "ACTIVE_CONSTRUCTION_PROPS", "conf": "high", "basis": "Shores, reshores and formwork throughout the debris"}
+   ],
+   "record": [
+    {"item": "RECORD_POUR_IN_PROGRESS", "conf": "high", "basis": "Collapsed while the roof slab was being concreted"}
+   ],
+   "truth": {"T": "primary", "D": "primary", "M": "contributing", "X": "ruled_out", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "NBS (BSS 145): punching-shear capacity of the 5th-floor flat slab insufficient for construction loads; no punching check in design; slab thin and top steel set too high.",
+   "sources": ["https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience145.pdf", "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2374.pdf"]
+  },
+  "lotus_riverside_2009": {
+   "name": "Lotus Riverside Block 7, Shanghai, China",
+   "date": "2009-06-27",
+   "storeys": 13,
+   "tier": "official",
+   "photos": [
+    {"item": "TILTED_OR_OVERTURNED", "conf": "high", "basis": "Building toppled intact onto its side"},
+    {"item": "ADJACENT_EXCAVATION", "conf": "high", "basis": "Open garage excavation on one side, soil stockpile on the other"},
+    {"item": "PILES_OR_FOOTINGS_EXPOSED_FAILED", "conf": "high", "basis": "Row of snapped precast piles exposed under the toppled raft"}
+   ],
+   "record": [],
+   "truth": {"F": "primary", "M": "ruled_out", "D": "ruled_out", "X": "ruled_out", "B": "ruled_out", "Q": "ruled_out", "T": "ruled_out"},
+   "finding": "Officials: construction-procedure error. A 4.6 m excavation on one side and a 10 m soil stockpile on the other pushed the pile foundation sideways. Design, survey and materials not at fault.",
+   "sources": ["https://en.wikipedia.org/wiki/Collapse_of_Lotus_Riverside_Block_7", "https://covid-19.chinadaily.com.cn/china/2009-07/04/content_8378498.htm"]
+  },
+  "ronan_point_1968": {
+   "name": "Ronan Point, Newham, London, UK",
+   "date": "1968-05-16",
+   "storeys": 22,
+   "tier": "official",
+   "photos": [
+    {"item": "NO_TILT", "conf": "high", "basis": "Tower standing; one corner bay missing from floor 18 to the podium"},
+    {"item": "WALL_PANELS_BLOWN_OUT", "conf": "medium", "basis": "Load-bearing flank-wall panels missing at the initiating floor; partial, bay-wide collapse only"}
+   ],
+   "record": [
+    {"item": "RECORD_EXPLOSION_REPORTED", "conf": "high", "basis": "Gas explosion in an 18th-floor flat reported immediately"}
+   ],
+   "truth": {"B": "primary", "D": "contributing", "M": "ruled_out", "F": "ruled_out", "Q": "ruled_out", "X": "ruled_out"},
+   "finding": "Griffiths tribunal: town-gas explosion blew out load-bearing panels; progressive collapse of the corner was inherent in the large-panel design, not workmanship.",
+   "sources": ["https://api.parliament.uk/historic-hansard/commons/1968/nov/06/ronan-point-flats-report", "https://building.co.uk/news/the-extent-of-the-collapse-was-inherent-in-the-design-of-ronan-point/3057816.article"]
+  },
+  "ikoyi_2021": {
+   "name": "Gerrard Road 21-storey tower, Ikoyi, Lagos, Nigeria",
+   "date": "2021-11-01",
+   "storeys": 21,
+   "tier": "official",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Floors stacked within the footprint"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No overturning"},
+    {"item": "ACTIVE_CONSTRUCTION_PROPS", "conf": "high", "basis": "Under construction; props and formwork in the debris"},
+    {"item": "VOIDS_UNDER_STACK", "conf": "medium", "basis": "Survivors recovered from voids"}
+   ],
+   "record": [
+    {"item": "RECORD_FLOORS_EXCEED_PERMIT", "conf": "high", "basis": "Reported within days: approval for 15 storeys, 21 built"}
+   ],
+   "truth": {"X": "primary", "D": "primary", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "Lagos panel: erosion of professional ethics and due diligence; NIStructE: design revised from 6 to 12, 15 then 21 storeys by several firms; ground-floor column failure, foundation not the root cause.",
+   "sources": ["https://saharareporters.com/2022/01/05/why-21-storey-ikoyi-building-collapsed-%E2%80%93-panel-reveals-after-submitting-report-lagos", "https://businessday.ng/news/article/the-root-cause-behind-the-collapse-of-21-storey-building-in-ikoyi/"]
+  },
+  "scoan_2014": {
+   "name": "Synagogue Church of All Nations guesthouse, Ikotun, Lagos, Nigeria",
+   "date": "2014-09-12",
+   "storeys": 6,
+   "tier": "official",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Floors stacked flat in the footprint"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No overturning"},
+    {"item": "UPPER_FLOORS_RECENT", "conf": "medium", "basis": "Additional floors under construction on top at the time"}
+   ],
+   "record": [
+    {"item": "RECORD_FLOORS_EXCEED_PERMIT", "conf": "high", "basis": "No planning approval; extra floors being added (reported at the time)"}
+   ],
+   "truth": {"X": "primary", "D": "primary", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "Coroner (2015): structural failure from design and detailing errors; extra floors added without approval to a building not designed for them; sabotage claim rejected.",
+   "sources": ["https://www.sowetanlive.co.za/news/2015-07-09-church-run-by-tb-joshua-negligent-over-deadly-building-collapse/", "https://www.news24.com/Africa/News/No-planning-approval-for-deadly-preacher-building-20141030"]
+  },
+  "ita_faji_2019": {
+   "name": "Ita-Faji school building, Lagos Island, Nigeria",
+   "date": "2019-03-13",
+   "storeys": 4,
+   "tier": "professional",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Floors stacked flat between neighbours"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No overturning"},
+    {"item": "VOIDS_UNDER_STACK", "conf": "medium", "basis": "Children rescued from voids"},
+    {"item": "POOR_CONCRETE_CONFIRMED", "conf": "low", "basis": "Crumbling concrete visible in rescue photos (not verified by hand or test)"}
+   ],
+   "record": [
+    {"item": "RECORD_CRACKS_REPORTED", "conf": "high", "basis": "Building marked as distressed and earmarked for demolition beforehand"},
+    {"item": "RECORD_USE_CHANGE_OVERLOAD", "conf": "high", "basis": "School operating in a residential building"}
+   ],
+   "truth": {"M": "primary", "F": "contributing", "X": "contributing", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "Federal committee (NBRRI): concrete strength below minimum design strength, weak mix, shallow foundation on low-bearing sandy soil, overloading from change of use to a school.",
+   "sources": ["https://www.pulse.ng/story/fg-explains-the-cause-of-ita-faji-building-collapse-2024081207441543506", "https://guardian.ng/property/panel-submits-reports-as-lagos-uncovers-fresh-distressed-building/"]
+  },
+  "ronesans_2023": {
+   "name": "Ronesans Rezidans, Antakya, Hatay, Turkiye",
+   "date": "2023-02-06",
+   "storeys": 12,
+   "tier": "expert",
+   "photos": [
+    {"item": "TILTED_OR_OVERTURNED", "conf": "high", "basis": "Block toppled onto its side largely intact"},
+    {"item": "WIDESPREAD_DAMAGE_NEARBY", "conf": "high", "basis": "Many surrounding buildings collapsed at the same time"}
+   ],
+   "record": [
+    {"item": "RECORD_EARTHQUAKE", "conf": "high", "basis": "Mw 7.8 Kahramanmaras earthquake at the time of collapse"}
+   ],
+   "truth": {"Q": "primary", "F": "contributing", "B": "ruled_out"},
+   "finding": "Collapsed in the Mw 7.8 earthquake; experts cite a shallow raft without piles on soft alluvium. Court case ongoing; no published final technical report found.",
+   "sources": ["https://en.wikipedia.org/wiki/R%C3%B6nesans_Rezidans", "https://hurriyetdailynews.com/court-holds-1st-hearing-in-landmark-quake-case-192666"]
+  },
+  "hotel_new_world_1986": {
+   "name": "Hotel New World (Lian Yak Building), Singapore",
+   "date": "1986-03-15",
+   "storeys": 6,
+   "tier": "official",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Floors pancaked within the footprint"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No overturning"},
+    {"item": "VOIDS_UNDER_STACK", "conf": "high", "basis": "17 people rescued from voids over several days"}
+   ],
+   "record": [],
+   "truth": {"D": "primary", "M": "contributing", "B": "ruled_out", "F": "ruled_out", "Q": "ruled_out"},
+   "finding": "Commission of Inquiry (1987): structural design error (building self-weight underestimated) and poor construction; explosion and nearby MRT works ruled out.",
+   "sources": ["https://en.wikipedia.org/wiki/Collapse_of_Hotel_New_World", "https://eresources.nlb.gov.sg/infopedia/articles/SIP_783__2009-01-02.html"]
+  },
+  "melcom_2012": {
+   "name": "Melcom store, Achimota, Accra, Ghana",
+   "date": "2012-11-07",
+   "storeys": 6,
+   "tier": "professional",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Floors stacked within the footprint"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No overturning"},
+    {"item": "VOIDS_UNDER_STACK", "conf": "high", "basis": "Dozens rescued alive from voids"}
+   ],
+   "record": [],
+   "truth": {"M": "primary", "D": "primary", "X": "contributing", "F": "ruled_out", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "Ghana Institution of Engineers: very low concrete strength, inadequate column reinforcement, extra 100 mm screed on each floor; soil not the cause.",
+   "sources": ["https://www.ghanabusinessnews.com/?p=105920", "https://graphiconline.com/features/opinion/14-died-on-november-7-2012-we-may-never-know-why.html"]
+  },
+  "surfside_2021": {
+   "name": "Champlain Towers South, Surfside, Florida, USA",
+   "date": "2021-06-24",
+   "storeys": 12,
+   "tier": "interim",
+   "photos": [
+    {"item": "PANCAKE_IN_FOOTPRINT", "conf": "high", "basis": "Central and east sections pancaked; west section left standing"},
+    {"item": "NO_TILT", "conf": "high", "basis": "No overturning of the collapsed mass"},
+    {"item": "REBAR_CORRODED", "conf": "medium", "basis": "Corroded reinforcement visible in garage and pool-deck debris photos"}
+   ],
+   "record": [
+    {"item": "RECORD_CRACKS_REPORTED", "conf": "high", "basis": "2018 engineer's report of major structural damage below the pool deck; water and cracking in the garage minutes before"}
+   ],
+   "truth": {"M": "primary", "D": "contributing", "B": "ruled_out", "Q": "ruled_out"},
+   "finding": "NIST interim (Sept 2025): failure most likely began at a pool-deck slab-column connection; pool deck built with fewer and wider-spaced top bars than designed; long-term water damage. Final report pending.",
+   "sources": ["https://www.wlrn.org/light/government-politics/2025-09-09/nist-surfside-collapse-cause-champlain-towers-south", "https://www.cbsnews.com/amp/miami/news/2021-surfside-condo-collapse-that-killed-98-people-started-in-pool-deck-nist-says"]
+  }
+ }
+}

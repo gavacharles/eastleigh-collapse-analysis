@@ -1,0 +1,41 @@
+{
+ "used": {
+  "ACTIVE_CONSTRUCTION_PROPS": [
+   "840733.jpg",
+   "841317.jpg",
+   "841321.jpg"
+  ],
+  "NEIGHBOUR_DAMAGED_TO_HEIGHT": [
+   "841317.jpg",
+   "841321.jpg",
+   "841325.jpg",
+   "841326.jpg"
+  ],
+  "NO_COLUMN_STUBS_BETWEEN_SLABS": [
+   "841382.jpg"
+  ],
+  "NO_TILT": [
+   "841322.jpg",
+   "841323.jpg"
+  ],
+  "PANCAKE_IN_FOOTPRINT": [
+   "841317.jpg",
+   "841322.jpg"
+  ],
+  "REBAR_MILL_MARKED": [
+   "840733.jpg",
+   "840734.jpg",
+   "840735.jpg"
+  ],
+  "RIBBED_EPS_SLABS": [
+   "841382.jpg"
+  ],
+  "VOIDS_UNDER_STACK": [
+   "841322.jpg",
+   "841382.jpg"
+  ]
+ },
+ "excluded_low_confidence": [
+  "POSSIBLE_HONEYCOMBING"
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "slab_layers_auto_count": 7,
+ "slab_layers_auto_count_range": [
+  3,
+  9
+ ],
+ "layer_count_photo": "841382.jpg",
+ "building_storeys_min": 11,
+ "not_measurable": "Pile height/volume: needs 20+ overlapping photos or a drone survey (structure-from-motion). Bar diameters, tie spacing, cover: need a scale reference in element close-ups."
+}

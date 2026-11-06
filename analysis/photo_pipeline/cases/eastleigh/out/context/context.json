@@ -1,0 +1,1182 @@
+{
+ "location": {
+  "lat": -1.27585,
+  "lon": 36.85125,
+  "note": "Ninth St x 2nd Ave Eastleigh, approx. (+/-100 m); plot not confirmed"
+ },
+ "event_date": "2026-10-23",
+ "earthquakes": [],
+ "rain": {
+  "days": [
+   "2026-08-24",
+   "2026-08-25",
+   "2026-08-26",
+   "2026-08-27",
+   "2026-08-28",
+   "2026-08-29",
+   "2026-08-30",
+   "2026-08-31",
+   "2026-09-01",
+   "2026-09-02",
+   "2026-09-03",
+   "2026-09-04",
+   "2026-09-05",
+   "2026-09-06",
+   "2026-09-07",
+   "2026-09-08",
+   "2026-09-09",
+   "2026-09-10",
+   "2026-09-11",
+   "2026-09-12",
+   "2026-09-13",
+   "2026-09-14",
+   "2026-09-15",
+   "2026-09-16",
+   "2026-09-17",
+   "2026-09-18",
+   "2026-09-19",
+   "2026-09-20",
+   "2026-09-21",
+   "2026-09-22",
+   "2026-09-23",
+   "2026-09-24",
+   "2026-09-25",
+   "2026-09-26",
+   "2026-09-27",
+   "2026-09-28",
+   "2026-09-29",
+   "2026-09-30",
+   "2026-10-01",
+   "2026-10-02",
+   "2026-10-03",
+   "2026-10-04",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07",
+   "2026-10-08",
+   "2026-10-09",
+   "2026-10-10",
+   "2026-10-11",
+   "2026-10-12",
+   "2026-10-13",
+   "2026-10-14",
+   "2026-10-15",
+   "2026-10-16",
+   "2026-10-17",
+   "2026-10-18",
+   "2026-10-19",
+   "2026-10-20",
+   "2026-10-21",
+   "2026-10-22",
+   "2026-10-23"
+  ],
+  "daily": [
+   0.9,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.2,
+   3.7,
+   2.5,
+   0.7,
+   0.0,
+   0.2,
+   0.1,
+   0.0,
+   0.0,
+   0.6,
+   1.1,
+   1.8,
+   0.9,
+   6.2,
+   0.9,
+   0.4,
+   0.9,
+   2.8,
+   0.1,
+   3.7,
+   1.4,
+   4.0,
+   4.8,
+   0.6,
+   0.8,
+   0.0,
+   0.2,
+   0.0,
+   0.6,
+   1.6,
+   1.3,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.0,
+   0.7,
+   1.2,
+   5.2,
+   4.3,
+   5.1,
+   11.5,
+   3.5,
+   0.0,
+   0.0,
+   0.4,
+   3.4,
+   0.3,
+   0.9,
+   0.7,
+   1.1,
+   0.0,
+   0.3,
+   0.1,
+   1.0
+  ],
+  "r7": 4.1,
+  "r30": 45.4,
+  "clim30": [
+   11.3,
+   33.8,
+   60.8,
+   355.8,
+   70.4,
+   21.3,
+   12.5,
+   43.9,
+   46.2,
+   31.2
+  ],
+  "r30_percentile": 60.0,
+  "missing_days": 0
+ },
+ "osm": {
+  "water": [],
+  "buildings": [
+   {
+    "d": 149.0,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "12"
+    }
+   },
+   {
+    "d": 113.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 108.7,
+    "tags": {
+     "building": "yes",
+     "building:levels": "9"
+    }
+   },
+   {
+    "d": 117.3,
+    "tags": {
+     "building": "yes",
+     "building:levels": "9"
+    }
+   },
+   {
+    "d": 134.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 3.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 34.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 14.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 45.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 62.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 45.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 34.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 60.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 66.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 78.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 79.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 80.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 46.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 43.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 54.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 68.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 40.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 38.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 29.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 37.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 33.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 28.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 70.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 45.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 35.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 43.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 59.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 59.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 94.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 111.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 71.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 72.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 72.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 101.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 89.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 99.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 110.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 115.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 118.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 54.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 58.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 91.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 95.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 125.1,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "11"
+    }
+   },
+   {
+    "d": 142.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 137.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 148.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 50.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 51.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 55.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 62.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 20.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 26.8,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "13"
+    }
+   },
+   {
+    "d": 120.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 131.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 128.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 123.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 111.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 119.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 113.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 110.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 96.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 136.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 118.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 138.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 132.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 104.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 106.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 103.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 130.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 114.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 125.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 110.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 40.9,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "10"
+    }
+   },
+   {
+    "d": 41.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 32.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 32.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 94.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 73.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 110.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 86.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 81.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 90.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 74.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 85.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 104.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 120.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 135.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 110.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 113.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 105.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 27.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 31.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 35.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 119.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 104.2,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 143.9,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 148.4,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "15"
+    }
+   },
+   {
+    "d": 134.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 100.7,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "13"
+    }
+   },
+   {
+    "d": 90.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 118.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 73.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 80.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 140.7,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 122.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 130.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 94.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 47.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 94.3,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 96.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 134.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 111.5,
+    "tags": {
+     "building": "yes",
+     "building:levels": "12"
+    }
+   },
+   {
+    "d": 96.1,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "12"
+    }
+   },
+   {
+    "d": 85.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 86.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 56.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 145.6,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 127.8,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 134.0,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 113.5,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 57.0,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "12"
+    }
+   },
+   {
+    "d": 140.4,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 140.1,
+    "tags": {
+     "building": "yes"
+    }
+   },
+   {
+    "d": 133.4,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "13"
+    }
+   },
+   {
+    "d": 102.0,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "11"
+    }
+   },
+   {
+    "d": 79.3,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "11"
+    }
+   },
+   {
+    "d": 54.7,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "9"
+    }
+   },
+   {
+    "d": 66.5,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "9"
+    }
+   },
+   {
+    "d": 35.8,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "11"
+    }
+   },
+   {
+    "d": 75.1,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "10"
+    }
+   },
+   {
+    "d": 62.2,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "10"
+    }
+   },
+   {
+    "d": 15.2,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "11"
+    }
+   },
+   {
+    "d": 60.4,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "15"
+    }
+   },
+   {
+    "d": 123.8,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "10"
+    }
+   },
+   {
+    "d": 80.7,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "14"
+    }
+   },
+   {
+    "d": 125.6,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "15"
+    }
+   },
+   {
+    "d": 139.6,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "15"
+    }
+   },
+   {
+    "d": 118.1,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "16"
+    }
+   },
+   {
+    "d": 140.2,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "9"
+    }
+   },
+   {
+    "d": 122.6,
+    "tags": {
+     "building": "apartments",
+     "building:levels": "17"
+    }
+   }
+  ],
+  "construction": [],
+  "water_min_m": null,
+  "n_buildings": 146,
+  "n_with_levels": 28,
+  "max_levels": 17.0
+ },
+ "soil": {
+  "clay_pct": [
+   40.5,
+   46.6
+  ],
+  "depths": [
+   "0-5 cm",
+   "30-60 cm"
+  ],
+  "wrb": "Ferralsols",
+  "wrb_top3": [
+   [
+    "Ferralsols",
+    14
+   ],
+   [
+    "Cambisols",
+    13
+   ],
+   [
+    "Vertisols",
+    13
+   ]
+  ],
+  "offset_km": 0.5
+ },
+ "imagery": [
+  {
+   "acquired": "20110630",
+   "sensor": "WV02",
+   "res_m": "0.5",
+   "release": "10"
+  },
+  {
+   "acquired": "20130212",
+   "sensor": "Pleiades",
+   "res_m": "0.5",
+   "release": "15084"
+  },
+  {
+   "acquired": "20140129",
+   "sensor": "GE01",
+   "res_m": "0.46",
+   "release": "18966"
+  },
+  {
+   "acquired": "20170119",
+   "sensor": "WV02",
+   "res_m": "0.5",
+   "release": "25521"
+  },
+  {
+   "acquired": "20171227",
+   "sensor": "WV03_VNIR",
+   "res_m": "0.31",
+   "release": "3201"
+  },
+  {
+   "acquired": "20190201",
+   "sensor": "WV03_VNIR",
+   "res_m": "0.31",
+   "release": "4756"
+  },
+  {
+   "acquired": "20200220",
+   "sensor": "WV02",
+   "res_m": "0.5",
+   "release": "19187"
+  },
+  {
+   "acquired": "20210827",
+   "sensor": "WV02",
+   "res_m": "0.5",
+   "release": "10321"
+  },
+  {
+   "acquired": "20230221",
+   "sensor": "WV02",
+   "res_m": "0.5",
+   "release": "17632"
+  },
+  {
+   "acquired": "20231130",
+   "sensor": "WV03",
+   "res_m": "0.31",
+   "release": "34007"
+  },
+  {
+   "acquired": "20250107",
+   "sensor": "WV02",
+   "res_m": "0.5",
+   "release": "51127"
+  },
+  {
+   "acquired": "20260116",
+   "sensor": "LG06",
+   "res_m": "0.34",
+   "release": "63116"
+  }
+ ],
+ "errors": {},
+ "proposals": [
+  {
+   "item": "DESK_EXPANSIVE_CLAY",
+   "reason": "clay [40.5, 46.6] %, WRB Ferralsols (0.5 km from site)",
+   "note": "high clay but Ferralsols is not usually expansive: accept only if local geology confirms swelling (black cotton) soil"
+  }
+ ],
+ "sources": {
+  "quake": "USGS ComCat",
+  "rain": "Open-Meteo ERA5 reanalysis",
+  "osm": "OpenStreetMap contributors (ODbL)",
+  "soil": "ISRIC SoilGrids 250 m",
+  "img": "Esri World Imagery Wayback (Maxar, Airbus and others)"
+ }
+}
