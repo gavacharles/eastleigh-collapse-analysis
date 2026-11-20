@@ -31,3 +31,6 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+
+# Paper drafts and write-ups are kept private (moved 2026-11-20)
+/analysis/REPORT.md
