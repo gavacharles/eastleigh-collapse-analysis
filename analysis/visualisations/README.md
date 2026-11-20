@@ -94,4 +94,4 @@ The eyewitness footage shows identifiable bystanders, so this repository contain
 - R1 (eyewitness-view 3-D) and R3 (aerial 3-D): removed because they did not render well.
 - The earlier six-scene story was replaced by the narrated story.
 
-Scripts that produce each item are listed in `../REPORT.md`; they write to `analysis/out/` and `analysis/gis/` by default.
+The scripts that produce each item write to `analysis/out/` and `analysis/gis/` by default.

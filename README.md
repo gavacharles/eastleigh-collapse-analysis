@@ -2,14 +2,13 @@
 
 Python scripts, results and visualisations for a preliminary engineering analysis of the 23 October 2026 building collapse on 9th Street, Eastleigh, Nairobi, built only from public material (one eyewitness video, site photographs, press reports and open data). It is not a determination of cause and does not assign fault.
 
-The full technical write-up is [analysis/REPORT.md](analysis/REPORT.md).
+The full technical write-up is kept private until publication.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
 | `analysis/01_…21_*.py` | Numbered analysis steps: video kinematics, physics and PINNs, digital twin, GIS, rainfall, seismic and soils, remote sensing, Bayesian ranking, figures and animations |
-| `analysis/REPORT.md` | Method, results, limitations and recommended investigations |
 | `analysis/out/` | Numerical results (kinematics, physics fits, FE twin, Bayesian network) |
 | `analysis/gis/` | Processed GIS layers and timelines |
 | `analysis/visualisations/` | Figures, maps, interactive pages and animations ([index](analysis/visualisations/README.md)) |
